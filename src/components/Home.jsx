@@ -163,7 +163,7 @@ const Home = () => {
 
   return (
     <>
-      <Header releaseGame={releaseGame} loadSpinner={loadSpinner} />
+      <Header releaseGame={releaseGame} />
       <div className="container-form">
         <div className="select-search">
           <h2>Platform & Category</h2>

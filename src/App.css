@@ -14,13 +14,33 @@ body{
   display: flex;
   flex-flow: column wrap;
   background-color: #303030;
-  width: 70%;
-  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
   -webkit-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
   -moz-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
   box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 650px){
+  
+  .container-header img{
+      height: 180px;
+  }
+
+  .container-header h1{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .card-header{
+    font-size: 16px;
+  }
+
+  .button-header{
+    width: 100px;
+    font-size: 10px;
+  }
 }
 
 .container-header h1{
@@ -161,7 +181,6 @@ body{
 
 .card{
   position: relative;
-  width: 351px;
   cursor: pointer;
   margin: 0 auto;
   background-color: #303030;
@@ -178,14 +197,13 @@ body{
 .card h4{
   position: absolute;
   background-color: #E03E3E;
-  top: 157px;
+  top: 165px;
   width: 200px;
   border-top-right-radius: 40px;
   color: #fff;
 }
 
 .card-img {
-  height: 198px;
   margin: 0 auto;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
@@ -200,6 +218,23 @@ body{
 
 .card:hover{
   color: #E03E3E;
+}
+
+@media (max-width: 650px){ 
+
+  .select-search select{
+    width: 150px;
+  }
+
+  .card-img{
+    height: 150px;
+  }
+
+  .card h4{
+    top: 110px;
+  }
+
+
 }
 
 /* .card > .card-icon{
@@ -252,23 +287,22 @@ body .modal {
 
 
 .header-modal{
+  position: relative;
   height: 400px;
   margin-bottom: 50px;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  align-content: flex-end;
   -webkit-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
   -moz-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
   box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
 }
 
 .header-img-modal img{
+  position: absolute;
   height: 250px;
   width: 350px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 300px;
+  top: 130px;
+  left: 270px;
   border: 1px solid #d3d2d2;
   border-radius: 15px;
   -webkit-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
@@ -277,18 +311,37 @@ body .modal {
 }
 
 .header-info-modal{
+  position: absolute;
+  top: 150px ;
+  left: 640px;
   text-align: left;
   line-height: 10px;
   margin-bottom: 30px;
   color: #fff;
 }
 
+@media (max-width: 970px){
+  .header-img-modal img{
+    left: 130px;
+    height: 200px;
+    width: 300px;
+  }
+
+}
+
 .header-info-modal h2{
-  margin-left: 5px;
   line-height: 50px;
   text-transform: uppercase;
   text-shadow: -1px 0 black, 0 1px black,
   1px 0 black, 0 -1px black
+}
+
+@media (max-width: 970px){
+  .header-info-modal{
+    top: 110px;
+    left: 450px;
+  }
+  
 }
 
 .header-info-modal span{
@@ -443,4 +496,89 @@ body .modal {
   -webkit-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
   -moz-box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
   box-shadow: 3px 10px 11px 1px rgba(0,0,0,0.36);
+}
+
+
+@media (max-width: 650px){ 
+  .modal{
+    height: 3300px;
+  }
+
+  .close-modal{
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+    border: 2px solid #000;
+  }
+
+  .header-modal{
+    height: 400px;
+  }
+
+  .header-img-modal img{
+    height: 130px;
+    width: 200px;
+    top: 50px;
+    left: 80px;
+  }
+
+  .header-info-modal{
+    text-align: center;
+    font-size: 12px;
+    top: 160px;
+    left:80px;
+  }
+
+  .header-info-modal p{
+    font-size: 15px;
+  }
+
+  .description-modal{
+    width: 100%;
+  }
+
+  .description-modal h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .body-modal{
+    width: 100%;
+    
+   
+    margin-bottom: 20px;
+  }
+  .body-modal h2{
+   margin-left: 0;
+   text-align: center;
+  }
+  .body-modal p{
+   margin-right: 20px;
+  }
+
+  .button-modal{
+    width: 100%;
+    margin: 0;
+  }
+
+  .button-modal h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .button-modal button{
+    margin-bottom: 20px;
+  }
+
+  .img-title{
+    text-align: center;
+    margin: 0;
+  }
+
+  .img-modal img{
+    width: 330px;
+    height: 300px;
+  }
 }
