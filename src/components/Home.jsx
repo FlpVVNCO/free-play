@@ -37,7 +37,7 @@ const Home = () => {
       },
       headers: {
         'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
-        'X-RapidAPI-Key': 'b2316266b4mshe45af62f53a243ep1afe41jsn1f64ae5d95a0',
+        'X-RapidAPI-Key': '***enter a key***',
       },
     }
     await axios
