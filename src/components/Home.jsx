@@ -59,7 +59,7 @@ const Home = () => {
       params: { 'sort-by': 'release-date' },
       headers: {
         'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
-        'X-RapidAPI-Key': 'b2316266b4mshe45af62f53a243ep1afe41jsn1f64ae5d95a0',
+        'X-RapidAPI-Key': '***enter a key***',
       },
     }
     await axios
@@ -81,7 +81,7 @@ const Home = () => {
       url: 'https://free-to-play-games-database.p.rapidapi.com/api/game',
       params: { id: gameId },
       headers: {
-        'X-RapidAPI-Key': 'b2316266b4mshe45af62f53a243ep1afe41jsn1f64ae5d95a0',
+        'X-RapidAPI-Key': '***enter a key***',
         'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
       },
     }
